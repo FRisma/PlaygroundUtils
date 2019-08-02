@@ -9,7 +9,7 @@ func timeElapsedInSecondsWhenRunningCode(operation: ()->()) -> Double {
 
 func averageTimeAfterRunning(times: Int, operation: ()->()) -> Double {
     var accum = 0.0
-    for _ in 1...times { accum = timeElapsedInSecondsWhenRunningCode { operation() } }
+    for _ in 1...times { accum += timeElapsedInSecondsWhenRunningCode { operation() } }
     return accum/Double(times)
 }
 
@@ -38,10 +38,20 @@ func calculate2() -> [String] {
     return result
 }
 
+var copy = namesArray
+func calculate3() -> [String]{
+    copy.removeAll { myName.contains($0) }
+    return copy
+}
+
 print(averageTimeAfterRunning(times: 100, operation: {
     calculate()
 }))
 
 print(averageTimeAfterRunning(times: 100, operation: {
     calculate2()
+}))
+
+print(averageTimeAfterRunning(times: 100, operation: {
+    calculate3()
 }))
