@@ -1,5 +1,11 @@
-// Check https://stackoverflow.com/questions/46200027/uilabel-wrong-word-wrap-in-ios-11
+/*:
+ # Weird word wrap in iOS11
+ 
+ - Author:
+ [Franco Risma](emilio.risma@gmail.com)
 
+ For more information, see [this StackOverflow article.](https://stackoverflow.com/questions/46200027/uilabel-wrong-word-wrap-in-ios-11)
+*/
 import UIKit
 import PlaygroundSupport
 
