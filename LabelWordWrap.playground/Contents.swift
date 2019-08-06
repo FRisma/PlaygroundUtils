@@ -1,3 +1,5 @@
+// Check https://stackoverflow.com/questions/46200027/uilabel-wrong-word-wrap-in-ios-11
+
 import UIKit
 import PlaygroundSupport
 
