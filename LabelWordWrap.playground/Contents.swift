@@ -6,6 +6,7 @@
 
  For more information, see [this StackOverflow article.](https://stackoverflow.com/questions/46200027/uilabel-wrong-word-wrap-in-ios-11)
 */
+
 import UIKit
 import PlaygroundSupport
 
@@ -20,7 +21,7 @@ var addressLabel: UILabel = {
     addressLabel.font = UIFont.systemFont(ofSize: 14)
     addressLabel.textColor = .black
     addressLabel.lineBreakMode = .byWordWrapping
-    addressLabel.numberOfLines = 0
+    addressLabel.numberOfLines = 2
     addressLabel.textAlignment = .left
     addressLabel.text = "Viamonte 5356, Mendoza, Mendoza, Argentina"
     addressLabel.backgroundColor = .red
